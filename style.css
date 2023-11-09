@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 50px;
+    width: 60vw;
+    max-width: 37.5rem;
+    border: 1px dashed chocolate;
+    background-image:
+    url(https://images.pexels.com/photos/2681319/pexels-photo-2681319.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+    background-image: url(https://images.pexels.com/photos/3113541/pexels-photo-3113541.png?auto=compress&cs=tinysrgb&w=600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: brown;
+}
+
+.input {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #B7B7B7;
+    border-radius: 10px;
+    margin-top: 4rem;
+}
+
+.input input {
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: .6rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: #B7B7B7;
+}
+
+.askBtn {
+    padding: .6rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    color: brown;
+    cursor: pointer;
+}
+
+.askBtn:hover {
+    color: black;
+    transition: all 2s ease;
+}
+
+#response {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    padding: .6rem;
+    border-radius: 10px;
+    overflow: scroll;
+    height: 40vh;
+    width: 100%;
+}
+
+.respond {
+    background-color: #B7B7B7;
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px brown;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+    margin-left: 60px;
+    width: 80%;
+}
+
+.respondTwo {
+    background-color: #B7B7B7;
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px brown;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    text-align: left;
+    width: 80%;
+}
+
+#response .icon {
+    font-size: 25px;
+    color: brown;
+}
+
+.empty {
+    background-color: #B7B7B7;
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px brown;
+}
+
+@media screen and (max-width: 760px) and (min-width: 460px) {
+    .container {
+        padding: 15px;
+        background-image: url(https://images.pexels.com/photos/8294608/pexels-photo-8294608.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        width: 100%;
+    } 
+
+    .title {
+        font-size: 3rem;
+    }
+
+    #response {
+        margin-bottom: 1rem;
+    }
+
+    .input {
+        width: 100%;
+        background: none;
+        color: #fff;
+    }
+
+    .input input {
+        background: none;
+        border-bottom: 2px solid white;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    input::placeholder {
+        font-size: 13px;
+    }
+
+    .askBtn {
+        font-size: 15px;
+        color: #000;
+        background: #fff;
+    }
+
+
+}
+
+@media screen and (max-width: 459px) and (min-width: 250px){
+    .container {
+        padding: 15px;
+        background-image: url(https://images.pexels.com/photos/8294594/pexels-photo-8294594.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        width: 90%;
+    } 
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #response {
+        height: 35vh;
+        font-size: 15px;
+    }
+
+    .respond {
+        margin-left: 45px;
+    }
+
+    .input {
+        width: 100%;
+        background: none;
+    }
+
+    .input input {
+        background: none;
+        border-bottom: 2px solid white;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    input::placeholder {
+        font-size: 13px;
+    }
+
+    .askBtn {
+        font-size: 15px;
+        color: #000;
+        background: #fff;
+    }
+
+}
